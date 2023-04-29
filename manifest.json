@@ -1,0 +1,11 @@
+{
+	"id": "obsidian-auto-hide-cursor",
+	"name": "Auto Hide Cursor",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Hides the cursor when scrolling and shows it again when moving the mouse.",
+	"author": "Mo Ismat",
+	"authorUrl": "",
+	"fundingUrl": "",
+	"isDesktopOnly": true
+}
