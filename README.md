@@ -1,9 +1,11 @@
 ## Obsidian Auto Hide Cursor
 
-Hides the cursor when scrolling and shows it again when moving the mouse.
+A nice complementary plugin to [obsidian-focus-mode](https://github.com/ryanpcmcquen/obsidian-focus-mode). Hides the cursor after scrolling up/down, and shows it again after moving the mouse.
 
 Similar to the chrome extension [Hide mouse pointer](https://chrome.google.com/webstore/detail/hide-mouse-pointer/lbbedlldjinglbnfghakndfbagkolfdf)
 
-### Manually installing the plugin
+### Installation
 
-Copy over `main.js`, `styles.css`, and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-auto-hide-cursor/`.
+The plugin was accepted by the plugin store. You can find it in the Community Plugins section inside obsidian.
+
+You can also manually install it by copying over `main.js`, `styles.css`, and `manifest.json` to your vault folder `VaultFolder/.obsidian/plugins/obsidian-auto-hide-cursor/`.
