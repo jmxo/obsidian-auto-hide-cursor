@@ -1,31 +1,35 @@
 import { Plugin } from "obsidian";
 
-export default class AutoHideCursorPlugin extends Plugin {
+export default class PopoutWindowListenerPlugin extends Plugin {
 	async onload() {
-		document.body.addEventListener(
-			"scroll",
-			() => {
-				document.body.classList.add("hide-cursor");
-			},
-			{ capture: true }
-		);
+		this.setupEventListeners(document.body);
 
-		document.body.addEventListener(
-			"mousemove",
-			() => {
-				document.body.classList.remove("hide-cursor");
-			},
-			{ capture: true }
+		this.registerEvent(
+			this.app.workspace.on("layout-change", () => {
+				setTimeout(() => {
+					this.setupEventListeners(activeDocument.body);
+				}, 1000);
+			})
 		);
 	}
 
-	async unload() {
-		document.body.classList.remove("hide-cursor");
-		document.body.removeEventListener("scroll", () => {}, {
-			capture: true,
-		});
-		document.body.removeEventListener("mousemove", () => {}, {
-			capture: true,
-		});
+	setupEventListeners(targetElement: HTMLElement) {
+		this.registerDomEvent(
+			targetElement,
+			"scroll",
+			() => {
+				targetElement.classList.add("hide-cursor");
+			},
+			{ capture: true }
+		);
+
+		this.registerDomEvent(
+			targetElement,
+			"mousemove",
+			() => {
+				targetElement.classList.remove("hide-cursor");
+			},
+			{ capture: true }
+		);
 	}
 }
