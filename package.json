@@ -1,7 +1,7 @@
 {
 	"name": "auto-hide-cursor",
-	"version": "1.0.0",
-	"description": "Hides the cursor when scrolling and shows it again when moving the mouse.",
+	"version": "1.1.0",
+	"description": "Hides the cursor when scrolling or after a delay, and shows it again after moving the mouse.",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

@@ -1,11 +1,11 @@
 {
 	"id": "auto-hide-cursor",
 	"name": "Auto Hide Cursor",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"minAppVersion": "0.15.0",
 	"description": "Hides the cursor when scrolling and shows it again when moving the mouse.",
-	"author": "Mo Ismat",
-	"authorUrl": "https://github.com/moismat",
+	"author": "jmxo",
+	"authorUrl": "https://github.com/jmxo",
 	"fundingUrl": "",
 	"isDesktopOnly": true
 }
